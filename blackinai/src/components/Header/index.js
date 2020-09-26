@@ -4,22 +4,26 @@ import { withStyles } from '@material-ui/core/styles';
 import Button from './../Button';
 import Typography from './../Typography';
 import HeaderLayout from './../HeaderLayout';
-import { Grid } from '@material-ui/core';
+import { Card, CardMedia, Container, Divider, Grid, GridList, GridListTile } from '@material-ui/core';
+
+import image1 from './../../assets/img/img-1.png';
+import image2 from './../../assets/img/img-2.png';
+import image3 from './../../assets/img/img-3.png';
+
 
 const styles = (theme) => ({
-    root:{
+    root: {
         display: 'flex',
         overflow: 'hidden',
     },
     background: {
+        display: 'flex',
+        position: 'relative',
         backgroundPosition: 'center',
     },
-    more: {
-        marginTop: theme.spacing(2),
-    },
     container: {
-        marginTop: theme.spacing(10),
-        marginBottom: theme.spacing(10),
+        marginTop: theme.spacing(15),
+        marginBottom: theme.spacing(15),
         display: 'flex',
         position: 'relative',
     },
@@ -29,6 +33,10 @@ const styles = (theme) => ({
         alignItems: 'center',
         padding: theme.spacing(0, 5),
     },
+    card: {
+        marginTop: theme.spacing(20),
+        marginBottom: theme.spacing(30),
+    }
 });
 
 function Header(props) {
@@ -36,29 +44,32 @@ function Header(props) {
 
     return (
         <HeaderLayout backgroundClassName={classes.background}>
-            <Grid container spacing={12}>
+            <Container className={classes.container}>
                 <Grid container spacing={3}>
-                    <Grid item xs={6}>
-                        <Typography align="left" variant="h4" marked="center">
-                            Black in AI is a place for sharing ideas,
-                            fostering collaborations and discussing
-                            initiatives to increase the presence of
-                            Black people in the field of Artificial
-                            Intelligence.
-                        </Typography>
+                    <Grid item xs={12} className={classes.container}>
+                        <Grid item xs={12} md={6}>
+                            <Typography align="left" variant="h4" marked="center">
+                                Black in AI is a place for sharing ideas,
+                                fostering collaborations and discussing
+                                initiatives to increase the presence of
+                                Black people in the field of Artificial
+                                Intelligence.
+                            </Typography>
+                        </Grid>
+                    </Grid>
+                    <Grid item xs={12} md={6}>
+                        <CardMedia component="img" height="420" image={image1}>
+                        </CardMedia>
+                    </Grid>
+                    <Grid item xs={12} md={6}>
+                        <CardMedia component="img" height="210" image={image2}>
+                        </CardMedia>
+                        <Divider></Divider>
+                        <CardMedia component="img" height="210" image={image3}>
+                        </CardMedia>
                     </Grid>
                 </Grid>
-                <Grid container spacing={2}>
-                    <Grid item xs={12} md={3}>            
-                    </Grid>
-                </Grid>
-
-            </Grid>
-            <Grid container spacing={3}>
-                <Grid item xs={6}>
-
-                </Grid>
-            </Grid>
+            </Container>
         </HeaderLayout>
     );
 }

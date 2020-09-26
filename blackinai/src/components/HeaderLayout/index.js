@@ -11,12 +11,12 @@ const styles = (theme) => ({
         alignItems: 'center',
         [theme.breakpoints.up('sm')]: {
             height: '80vh',
-            minHeight: 500,
-            maxHeight: 1300,
+            minHeight: 1000,
+            maxHeight: 2500,
         },
     },
     container: {
-        marginTop: theme.spacing(16),
+        marginTop: theme.spacing(20),
         marginBottom: theme.spacing(14),
         display: 'flex',
         flexDirection: 'column',
