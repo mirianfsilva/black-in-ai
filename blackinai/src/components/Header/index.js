@@ -36,6 +36,9 @@ const styles = (theme) => ({
     card: {
         marginTop: theme.spacing(20),
         marginBottom: theme.spacing(30),
+    },
+    divider: {
+        size: "5px",
     }
 });
 
@@ -58,13 +61,13 @@ function Header(props) {
                         </Grid>
                     </Grid>
                     <Grid item xs={12} md={6}>
-                        <CardMedia component="img" height="420" image={image1}>
+                        <CardMedia component="img" height="440" image={image1}>
                         </CardMedia>
                     </Grid>
                     <Grid item xs={12} md={6}>
                         <CardMedia component="img" height="210" image={image2}>
                         </CardMedia>
-                        <Divider></Divider>
+                        <br></br>
                         <CardMedia component="img" height="210" image={image3}>
                         </CardMedia>
                     </Grid>
