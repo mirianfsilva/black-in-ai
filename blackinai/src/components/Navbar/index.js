@@ -4,7 +4,7 @@ import clsx from 'clsx';
 import { makeStyles } from '@material-ui/core/styles';
 import { withStyles } from '@material-ui/core/styles';
 import Link from '@material-ui/core/Link';
-import { AppBar, Toolbar, SwipeableDrawer } from '@material-ui/core';
+import { AppBar, Toolbar, SwipeableDrawer, Button} from '@material-ui/core';
 import logo from './../../assets/img/bai-logo.png';
 
 export const toolbarStyles = (theme) => ({
@@ -42,6 +42,7 @@ const styles = (theme) => ({
         fontSize: 16,
         color: theme.palette.primary.dark,
         marginLeft: theme.spacing(5),
+        paddingTop: theme.spacing(2),
     },
     linkSecondary: {
         color: theme.palette.secondary.primary,
@@ -56,8 +57,23 @@ const styles = (theme) => ({
     },
     colorAppBar: {
         color : "#D8CCCC",
+    },
+    chip: {
+        marginLeft: theme.spacing(5),
+        margin: theme.spacing(1),
+        borderRadius: "40px",
     }
 });
+
+const ColorButton = withStyles((theme) => ({
+    root: {
+        color: theme.palette.getContrastText(theme.palette.warning.main),
+        backgroundColor: theme.palette.warning.main,
+        '&:hover': {
+            backgroundColor: theme.palette.warning.main,
+        },
+    },
+}))(Button);
 
 function AppAppBar(props) {
     const { classes } = props;
@@ -89,6 +105,9 @@ function AppAppBar(props) {
                                 href="/">
                                 {'Partnership'}
                             </Link>
+                            <ColorButton className={classes.chip} size="small" variant="contained" href="/">
+                                {'Donate'}
+                            </ColorButton>
                         </div>
 
                     </React.Fragment>

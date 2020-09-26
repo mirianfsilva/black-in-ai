@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { makeStyles } from '@material-ui/core/styles';
 import { withStyles } from '@material-ui/core/styles';
 import { List, Link, ListItem, ListItemText, CssBaseline, ListItemAvatar, Grid } from '@material-ui/core';
-import { Container, Divider, Avatar, Card } from '@material-ui/core';
+import { Container, Divider, Avatar, Card, Button} from '@material-ui/core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Typography from './../Typography';
 
@@ -35,7 +35,22 @@ const useStyles = makeStyles((theme) => ({
         paddingTop: theme.spacing(0.2),
         paddingBottom: theme.spacing(0.2),
     },
+    chip: {
+        marginLeft: theme.spacing(5),
+        margin: theme.spacing(1),
+        borderRadius: "40px",
+    }
 }));
+
+const ColorButton = withStyles((theme) => ({
+    root: {
+        color: theme.palette.getContrastText(theme.palette.warning.main),
+        backgroundColor: theme.palette.warning.main,
+        '&:hover': {
+            backgroundColor: theme.palette.warning.main,
+        },
+    },
+}))(Button);
 
 function Copyright() {
     return (
@@ -71,6 +86,9 @@ function Footer(props) {
                                             possibly registration number.
                                     </Typography>
                                     <Copyright />
+                                    <ColorButton className={classes.chip} size="small" variant="contained" href="/">
+                                        {'Donate'}
+                                    </ColorButton>
                                 </Grid>
                             </Grid>
                         </Grid>
