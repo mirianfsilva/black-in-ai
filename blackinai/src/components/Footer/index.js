@@ -32,8 +32,8 @@ const useStyles = makeStyles((theme) => ({
         padding: 0,
     },
     listItem: {
-        paddingTop: theme.spacing(0.2),
-        paddingBottom: theme.spacing(0.2),
+        paddingTop: theme.spacing(1),
+        paddingBottom: theme.spacing(1),
     },
     chip: {
         marginLeft: theme.spacing(5),
@@ -79,14 +79,20 @@ function Footer(props) {
                     <Grid item xs={6} sm={8} md={4}>
                         <Grid container direction="column" justify="flex-end"  spacing={2}>
                             <Grid item>
-                                <Grid item>
+                                <Grid item className={classes.listItem}>
+                                    <Typography style={{ color:'#f8f7f7'}} variant="h5" marked="left" gutterBottom>
+                                        BLACK IN AI
+                                    </Typography>
                                     <Typography style={{ color:'#f8f7f7'}} variant="body1" marked="left">
                                             Short sentence stating the nature of the
                                             organization e.g. tax-exempt, non-profit and
                                             possibly registration number.
                                     </Typography>
+                                    <br></br>
                                     <Copyright />
-                                    <ColorButton className={classes.chip} size="small" variant="contained" href="/">
+                                    <br></br>
+                                    <br></br>
+                                    <ColorButton justify="left" className={classes.chip} size="small" variant="contained" href="/">
                                         {'Donate'}
                                     </ColorButton>
                                 </Grid>
@@ -99,7 +105,7 @@ function Footer(props) {
                         </Typography>
                         <ul className={classes.list} style={{ color:'#f8f7f7'}}>
                             <li className={classes.listItem}>
-                                <Link variant="body1" style={{ color:'#f8f7f7'}} href="/">Physical address, if available will go right here.</Link>
+                                <Typography variant="body1" style={{ color:'#f8f7f7'}} href="/">Physical address, if available will go right here.</Typography>
                             </li>
                             <li>
                                 <Typography style={{ color:'#f8f7f7'}} variant="body1" marked="left" gutterBottom>
@@ -121,22 +127,26 @@ function Footer(props) {
                     </Grid>
                     <Grid item xs={6} sm={4} md={2}>
                         <Typography style={{ color:'#f8f7f7'}} variant="h6" marked="left" gutterBottom>
-                            CONTACT US
+                            LINKS
                         </Typography>
                         <ul className={classes.list} style={{ color:'#f8f7f7'}}>
                             <li className={classes.listItem}>
-                                <Link variant="body1" style={{ color:'#f8f7f7'}} href="/">Physical address, if available will go right here.</Link>
+                                <Link variant="body1" style={{ color:'#f8f7f7'}} href="/">About Us</Link>
                             </li>
-                            <li>
-                                <Typography style={{ color:'#f8f7f7'}} variant="body1" marked="left" gutterBottom>
-                                    abc@blackinai.org
-                                </Typography>
+                            <li className={classes.listItem}>
+                                <Link variant="body1" style={{ color:'#f8f7f7'}} href="/">Programs</Link>
+                            </li>
+                            <li className={classes.listItem}>
+                                <Link variant="body1" style={{ color:'#f8f7f7'}} href="/">Membership</Link>
+                            </li>
+                            <li className={classes.listItem}>
+                                <Link variant="body1" style={{ color:'#f8f7f7'}} href="/">Partnership</Link>
                             </li>
                         </ul>
                     </Grid>
                     <Grid item xs={6} sm={4} md={2}>
                         <Typography style={{ color:'#f8f7f7'}} variant="h6" marked="left" gutterBottom>
-                            CONTACT US
+                            GET UPDATES
                         </Typography>
                         <ul className={classes.list} style={{ color:'#f8f7f7'}}>
                             <li className={classes.listItem}>
