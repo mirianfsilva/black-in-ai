@@ -6,6 +6,7 @@ import theme from './../../theme';
 import Header from '../../components/Header';
 import CommunityValues from '../../components/CommunityValues';
 import TeamMembers from '../../components/TeamMembers';
+import JoinUs from '../../components/JoinUs';
 
 function Home() {
     return (
@@ -15,6 +16,7 @@ function Home() {
             <Header/>
             <CommunityValues/>
             <TeamMembers/>
+            <JoinUs/>
             <Footer/>
         </ThemeProvider>
     );

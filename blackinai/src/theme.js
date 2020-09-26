@@ -33,16 +33,16 @@ const rawTheme = createMuiTheme({
         fontSize: 16,
         fontWeightLight: 500, // Work Sans
         fontWeightRegular: 400, // Work Sans
-        fontWeightMedium: 550, // Roboto Condensed
-        fontFamilySecondary: "'FF Hertz', sans-serif",
+        fontWeightMedium: 500, // Roboto Condensed
+        fontWeightBold: 600,
+        fontFamilySecondary: "'Enriqueta', sans-serif",
     },
 });
 
 const fontHeader = {
     color: rawTheme.palette.text.primary,
-    fontWeight: rawTheme.typography.fontWeightMedium,
+    fontWeight: rawTheme.typography.fontWeightBold,
     fontFamily: rawTheme.typography.fontFamilySecondary,
-    // textTransform: 'uppercase',
 };
 
 const theme = {
@@ -61,12 +61,13 @@ const theme = {
         h1: {
             ...rawTheme.typography.h1,
             ...fontHeader,
-            letterSpacing: 0,
+            letterSpacing: 5,
             fontSize: 60,
         },
         h2: {
             ...rawTheme.typography.h2,
             ...fontHeader,
+            fontWeightBold: 700,
             fontSize: 48,
         },
         h3: {
@@ -77,7 +78,7 @@ const theme = {
         h4: {
             ...rawTheme.typography.h4,
             ...fontHeader,
-            fontSize: 36,
+            fontSize: 32,
         },
         h5: {
             ...rawTheme.typography.h5,

@@ -84,7 +84,7 @@ function CommunityValues(props) {
                         <img src={backgroundImage} className={classes.curvyLines} />
                         <Grid item xs={12} md={6}>
                             <Typography variant="h2" color="secondary" className={classes.title}>
-                                We're fixing the diversity crises in AI.
+                                We’re fixing the diversity crisis in AI.
                             </Typography>
                             <ColorButton className={classes.chip} variant="contained" href="/">
                                 Our Programns
