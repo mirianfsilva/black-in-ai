@@ -6,9 +6,9 @@ import Typography from './../Typography';
 import HeaderLayout from './../HeaderLayout';
 import { Card, CardMedia, Container, Divider, Grid, GridList, GridListTile } from '@material-ui/core';
 
-import image1 from './../../assets/img/img-1.png';
-import image2 from './../../assets/img/img-2.png';
-import image3 from './../../assets/img/img-3.png';
+import image1 from './../../assets/img/bai-img-1.jpg';
+import image2 from './../../assets/img/bai-img-2.jpg';
+import image3 from './../../assets/img/bai-img-3.png';
 
 
 const styles = (theme) => ({

@@ -16,6 +16,8 @@ const styles = (theme) => ({
         marginBottom: theme.spacing(10),
         display: 'flex',
         position: 'relative',
+        flexDirection: 'column',
+        alignItems: 'center',
     },
     item: {
         display: 'flex',
@@ -46,7 +48,7 @@ const ColorButton = withStyles((theme) => ({
             backgroundColor: theme.palette.primary.dark,
         },
     },
-    secundary : {
+    secundary: {
         color: theme.palette.getContrastText(theme.palette.primary.light),
         backgroundColor: theme.palette.primary.light,
         '&:hover': {
@@ -72,27 +74,24 @@ function JoinUs(props) {
     return (
         <section className={classes.root}>
             <Container className={classes.container}>
-                <Grid container spacing={3}>
-                        <Grid item xs={12}>
-                            <Grid item xs={12} md={6} alignContent="center">
-                                <Typography variant="h2" className={classes.title}>
-                                    We’re just getting started
-                                </Typography>
-                                <Typography variant="body1" className={classes.title}>
-                                    Paint a picture of the future you’re looking to bring about through
-                                    your work as an organization. This is dummy copy. It is not meant to
-                                    be read. It has been placed here solely to demonstrate the look and
-                                    feel of finished, typeset text. Only for show. He who searches for
-                                    meaning here will be sorely disappointed. 
-                                </Typography>
-                                <ColorButton className={classes.chip} variant="contained" href="/">
-                                    How You Can Help
-                                </ColorButton>
-                                <JoinUsButton className={classes.chip} variant="contained" href="/">
-                                    Join Us
-                                </JoinUsButton>
-                            </Grid>
-                        </Grid>
+
+                <Grid item xs={12} md={6}>
+                    <Typography variant="h2" className={classes.title}>
+                        We’re just getting started
+                    </Typography>
+                    <Typography variant="body1" className={classes.title}>
+                        Paint a picture of the future you’re looking to bring about through
+                        your work as an organization. This is dummy copy. It is not meant to
+                        be read. It has been placed here solely to demonstrate the look and
+                        feel of finished, typeset text. Only for show. He who searches for
+                        meaning here will be sorely disappointed.
+                    </Typography>
+                    <ColorButton className={classes.chip} variant="contained" href="/">
+                        How You Can Help
+                    </ColorButton>
+                    <JoinUsButton className={classes.chip} variant="contained" href="/">
+                        Join Us
+                    </JoinUsButton>
                 </Grid>
             </Container>
         </section>

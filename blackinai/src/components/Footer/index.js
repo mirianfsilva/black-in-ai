@@ -99,7 +99,7 @@ function Footer(props) {
                             </Grid>
                         </Grid>
                     </Grid>
-                    <Grid item xs={6} sm={4} md={2}>
+                    <Grid item xs={6} sm={4} md={3}>
                         <Typography style={{ color:'#f8f7f7'}} variant="h6" marked="left" gutterBottom>
                             CONTACT US
                         </Typography>
@@ -144,18 +144,17 @@ function Footer(props) {
                             </li>
                         </ul>
                     </Grid>
-                    <Grid item xs={6} sm={4} md={2}>
+                    <Grid item xs={6} sm={4} md={3}>
                         <Typography style={{ color:'#f8f7f7'}} variant="h6" marked="left" gutterBottom>
                             GET UPDATES
                         </Typography>
                         <ul className={classes.list} style={{ color:'#f8f7f7'}}>
                             <li className={classes.listItem}>
-                                <Link variant="body1" style={{ color:'#f8f7f7'}} href="/">Physical address, if available will go right here.</Link>
+                                <Typography style={{ color:'#f8f7f7'}} variant="body1" marked="left" gutterBottom>
+                                    Sign up for our newsletter to get updates on our work.
+                                </Typography>
                             </li>
                             <li>
-                                <Typography style={{ color:'#f8f7f7'}} variant="body1" marked="left" gutterBottom>
-                                    abc@blackinai.org
-                                </Typography>
                             </li>
                         </ul>
                     </Grid>
