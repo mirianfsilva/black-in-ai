@@ -22,8 +22,8 @@ const styles = (theme) => ({
         backgroundPosition: 'center',
     },
     container: {
-        marginTop: theme.spacing(15),
-        marginBottom: theme.spacing(15),
+        marginTop: theme.spacing(8),
+        marginBottom: theme.spacing(10),
         display: 'flex',
         position: 'relative',
     },
@@ -34,7 +34,7 @@ const styles = (theme) => ({
         padding: theme.spacing(0, 5),
     },
     card: {
-        marginTop: theme.spacing(20),
+        marginTop: theme.spacing(10),
         marginBottom: theme.spacing(30),
     },
     divider: {
