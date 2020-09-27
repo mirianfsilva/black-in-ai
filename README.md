@@ -8,6 +8,7 @@ This project was created using Reactjs and UI material as a styling component. 
 - It's possible combine this frontend for consuming data from a API, to change text and images without having to change directly in the code.
 - All text and images are being hard code loaded.
 - The publication was made free of charge, using the vercel plataform.
+- Any changes made to the master branch are automatically updated on the website already published. Due to the deployment integration with the vercel app platform.
 - The project structure:
 
 ```
