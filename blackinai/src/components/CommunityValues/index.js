@@ -40,6 +40,12 @@ const styles = (theme) => ({
         margin: theme.spacing(1),
         size: 'large',
         borderRadius: "40px",
+    },
+    divider: {
+        backgroundColor: theme.palette.primary.dark,
+        margin: theme.spacing(2, 2),
+        width:"140vh",
+        height: "1px",
     }
 });
 
@@ -56,20 +62,20 @@ const ColorButton = withStyles((theme) => ({
 
 const valueslist = [
     {
-        id: 1, title: '201*',
-        text: 'BAI founded. Also give a brief info about how that happened e.g. where and first steps.'
+        id: 1, title: '2017',
+        text: 'BAI was founded to challenge the status quo.'
     },
     {
-        id: 2, title: '5999',
-        text: 'We’ve grown from this number to that number of members over this period of time.'
+        id: 2, title: '3000',
+        text: 'We’ve grown from a small facebook group to a global movement comprising 3000 community members & allies who believe that more black people should shape the direction of the field of AI.'
     },
     {
-        id: 3, title: '12+',
-        text: 'Number of workshops held or some other metric that shows how far we’ve come'
+        id: 3, title: '10+',
+        text: 'Number of workshops held or some other metric that shows how far we’ve come.'
     },
     {
-        id: 4, title: '4000%',
-        text: 'Increase in number of Blacks participating in major AI conferences globally.'
+        id: 4, title: '40x',
+        text: 'We have increased the number of Black people participating in major AI conferences globally by orders of magnitude through advocacy, financial aid and our workshop.'
     },
 ];
 
@@ -84,7 +90,7 @@ function CommunityValues(props) {
                         <img src={backgroundImage} className={classes.curvyLines} />
                         <Grid item xs={12} md={6}>
                             <Typography variant="h2" color="secondary" className={classes.title}>
-                                We’re fixing the diversity crisis in AI.
+                                We're addressing the diversity crisis in AI
                             </Typography>
                             <ColorButton className={classes.chip} variant="contained" href="/">
                                 Our Programns
@@ -92,29 +98,28 @@ function CommunityValues(props) {
                         </Grid>
                         <Grid item xs={12} md={6}>
                             <Typography variant="h4" className={classes.title}>
-                                This sentence captures specifics about
-                                the problem, it helps if its succint.
+                                Representation Matters
                             </Typography>
                             <Typography variant="body1" className={classes.title}>
-                                This is dummy copy. It is not meant to be read. It has been placed here solely
-                                to demonstrate the look and feel of finished, typeset text. Only for show. He
-                                who searches for meaning here will be sorely disappointed. These words are
-                                here to provide the reader with a basic impression of how actual text will
-                                appear in its final presentation.
+                                While artificial intelligence (AI) has the potential to solve 
+                                an incredible spectrum of problems and challenges in our lives, 
+                                our work and our world, there is a widening disconnect between 
+                                the people who are introducing and deploying AI-based solutions 
+                                and those who set policies for when and how these solutions are used.
                             </Typography>
                             <Typography variant="h4" className={classes.title}>
-                                This sentence captures specifics about
-                                the problem, it helps if its succint.
+                                Missed Opportunities
                             </Typography>
                             <Typography variant="body1" className={classes.title}>
-                                This is dummy copy. It is not meant to be read. It has been placed here solely
-                                to demonstrate the look and feel of finished, typeset text. Only for show. He
-                                who searches for meaning here will be sorely disappointed. These words are
-                                here to provide the reader with a basic impression of how actual text will
-                                appear in its final presentation.
+                                Much has been written about one consequence of this disconnect—algorithmic
+                                bias in AI systems, in which machine learning algorithms trained on data 
+                                that reflects historical discrimination replicate and even magnify it. 
+                                But there’s another pressing issue: There are many missed opportunities 
+                                to use AI for the good of many.
                             </Typography>
                         </Grid>
                     </Grid>
+                    <Divider variant="middle" className={classes.divider}/>
                     <Grid container spacing={5}>
                         {valueslist.map(key => (
                             <Grid item xs={12} md={3}>
@@ -123,7 +128,7 @@ function CommunityValues(props) {
                                     <Typography variant="h3" className={classes.title}>
                                         {key.title}
                                     </Typography>
-                                    <Typography variant="h5">
+                                    <Typography variant="body2">
                                         {key.text}
                                     </Typography>
                                 </div>

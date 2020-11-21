@@ -3,7 +3,7 @@ import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
 import { ThemeProvider, CssBaseline } from '@material-ui/core';
 import theme from './../../theme';
-import Header from '../../components/Header';
+import Header from '../../components/HeaderMain';
 import CommunityValues from '../../components/CommunityValues';
 import TeamMembers from '../../components/TeamMembers';
 import JoinUs from '../../components/JoinUs';

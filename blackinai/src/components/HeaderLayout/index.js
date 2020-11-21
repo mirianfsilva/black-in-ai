@@ -11,7 +11,7 @@ const styles = (theme) => ({
         alignItems: 'center',
         [theme.breakpoints.up('sm')]: {
             height: '50vh',
-            minHeight: 800,
+            minHeight: 900,
             maxHeight: 2000,
         },
     },

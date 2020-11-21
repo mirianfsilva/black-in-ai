@@ -80,11 +80,8 @@ function JoinUs(props) {
                         We’re just getting started
                     </Typography>
                     <Typography variant="body1" className={classes.title}>
-                        Paint a picture of the future you’re looking to bring about through
-                        your work as an organization. This is dummy copy. It is not meant to
-                        be read. It has been placed here solely to demonstrate the look and
-                        feel of finished, typeset text. Only for show. He who searches for
-                        meaning here will be sorely disappointed.
+                        We envision a thriving, end-to-end ecosystem sustainably allocating black talent 
+                        to the development of AI through engaging with students, researchers, entrepreneurs.
                     </Typography>
                     <ColorButton className={classes.chip} variant="contained" href="/">
                         How You Can Help

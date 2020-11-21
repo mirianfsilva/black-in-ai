@@ -8,6 +8,7 @@ import { library } from '@fortawesome/fontawesome-svg-core';
 import { fab } from '@fortawesome/free-brands-svg-icons';
 import { fas } from '@fortawesome/free-solid-svg-icons'
 import * as serviceWorker from './serviceWorker';
+import Membership from './pages/Membership';
 
 library.add(fab, fas);
 
@@ -16,6 +17,7 @@ ReactDOM.render(
         <Switch>
             <Route path="/" component={Home} exact />
             <Route path="/about" component={About} exact />
+            <Route path="/membership" component={Membership} exact/>
         </Switch>
     </BrowserRouter>,
   document.getElementById('root')

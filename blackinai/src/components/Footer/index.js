@@ -105,11 +105,13 @@ function Footer(props) {
                         </Typography>
                         <ul className={classes.list} style={{ color:'#f8f7f7'}}>
                             <li className={classes.listItem}>
-                                <Typography variant="body1" style={{ color:'#f8f7f7'}} href="/">Physical address, if available will go right here.</Typography>
+                                <Typography variant="body1" style={{ color:'#f8f7f7'}} href="/">
+                                    555 Bryant St #708, Palo Alto, CA 94301.
+                                </Typography>
                             </li>
                             <li>
                                 <Typography style={{ color:'#f8f7f7'}} variant="body1" marked="left" gutterBottom>
-                                    abc@blackinai.org
+                                    info@blackinai.org
                                 </Typography>
                             </li>
                             <li className={classes.iconsWrapper}>
