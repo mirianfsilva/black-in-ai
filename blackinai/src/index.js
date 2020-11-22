@@ -9,6 +9,8 @@ import { fab } from '@fortawesome/free-brands-svg-icons';
 import { fas } from '@fortawesome/free-solid-svg-icons'
 import * as serviceWorker from './serviceWorker';
 import Membership from './pages/Membership';
+import Partnership from './pages/Partnership';
+import AcademicPrograms from './pages/AcademicPrograms';
 
 library.add(fab, fas);
 
@@ -16,8 +18,10 @@ ReactDOM.render(
     <BrowserRouter>
         <Switch>
             <Route path="/" component={Home} exact />
-            <Route path="/about" component={About} exact />
+            <Route path="/about" component={Home} exact />
             <Route path="/membership" component={Membership} exact/>
+            <Route path="/partnership" component={Partnership} exact/>
+            <Route path="/academic-programs" component={AcademicPrograms} exact/> 
         </Switch>
     </BrowserRouter>,
   document.getElementById('root')

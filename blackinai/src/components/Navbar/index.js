@@ -90,7 +90,7 @@ function AppAppBar(props) {
                     <React.Fragment>
                         <div className={classes.right}>
                             <Link color="inherit" variant="h5" underline="none" className={classes.rightLink}
-                                href="/">
+                                href="/about">
                                 {'About'}
                             </Link>
                             <Link color="inherit" variant="h5" underline="none" className={classes.rightLink}
@@ -102,7 +102,7 @@ function AppAppBar(props) {
                                 {'Membership'}
                             </Link>
                             <Link color="inherit" variant="h5" underline="none" className={classes.rightLink}
-                                href="/">
+                                href="/partnership">
                                 {'Partnership'}
                             </Link>
                             <ColorButton className={classes.chip} size="small" variant="contained" href="/">
