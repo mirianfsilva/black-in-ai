@@ -3,7 +3,7 @@ import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
 import { ThemeProvider, CssBaseline } from '@material-ui/core';
 import theme from './../../theme';
-import Header from '../../components/HeaderMain';
+import HomeHeader from '../../components/HomeHeader';
 import CommunityValues from '../../components/CommunityValues';
 import TeamMembers from '../../components/TeamMembers';
 import JoinUs from '../../components/JoinUs';
@@ -13,7 +13,7 @@ function Home() {
         <ThemeProvider theme={theme}>
             <CssBaseline />
             <Navbar/>
-            <Header/>
+            <HomeHeader/>
             <CommunityValues/>
             <TeamMembers/>
             <JoinUs/>

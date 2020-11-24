@@ -18,7 +18,7 @@ const styles = (theme) => ({
         backgroundPosition: 'center',
     },
     container: {
-        marginTop: theme.spacing(10),
+        marginTop: theme.spacing(8),
         marginBottom: theme.spacing(3),
         display: 'flex',
         position: 'relative',
