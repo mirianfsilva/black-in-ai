@@ -2,11 +2,12 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
-import { Container, Card, CardContent, Button, Avatar, Link} from '@material-ui/core/';
+import { Container, Divider, Card, CardContent, Button, Avatar, Link} from '@material-ui/core/';
 import Typography from '../Typography';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 // images 
+import image from './../../assets/img/profile.png';
 import charles from './../../assets/img/team/charles.jpeg';
 import flora from './../../assets/img/team/flora.jpeg';
 import foutse from './../../assets/img/team/foutse.jpg';
@@ -53,78 +54,111 @@ const styles = (theme) => ({
         marginTop: theme.spacing(1),
         marginBottom: theme.spacing(8),
     },
+    divider: {
+        backgroundColor: theme.palette.secondary.dark,
+        margin: theme.spacing(2, 2),
+        flexItem: true,
+        width:"140vh",
+        height: "1px",
+    }
 });
 
-const teamlist = [
+const advisoryBoard = [
     {
-        image: charles,
-        title: 'Charles Earl', 
-        subtitle: 'Automattic.com',
-        link: 'https://www.linkedin.com/in/charlescearl6299/',
-        icon: <FontAwesomeIcon icon={["fab", "linkedin"]} size="1.5x"/>,
-    },
-    {
-        image: victor,
-        title: 'Victor Silva',
-        subtitle: 'University of Alberta',
+        image: image,
+        name: 'Charles Isbell',
         link: 'https://webdocs.cs.ualberta.ca/~vsilva/',
         icon: <FontAwesomeIcon icon={["fa", "link"]} size="1.5x"/>,
     },
     {
-        image: ignatius,
-        title: 'Ignatius Ezeani', 
-        subtitle: 'Lancaster University',
+        image: image,
+        name: 'Brandeis Marshall', 
         link: 'https://www.lancaster.ac.uk/scc/about-us/people/ignatius-ezeani',
         icon: <FontAwesomeIcon icon={["fa", "link"]} size="1.5x"/>,
     },
     {
-        image: foutse,
-        title: 'Foutse Yuehgoh', 
-        subtitle: 'Coexel',
+        image: image,
+        name: 'Makinde Adeagbo', 
         link: 'https://twitter.com/yuehgoh',
         icon: <FontAwesomeIcon icon={["fab", "twitter"]} size="1.5x"/>,
     },
     {
-        image: flora,
-        title: 'Flora Tasse', 
-        subtitle: 'Streem Inc',
+        image: image,
+        name: 'Rodney Sampson', 
         link: 'https://twitter.com/ftasse',
         icon: <FontAwesomeIcon icon={["fab", "twitter"]} size="1.5x"/>,
     },
     {
-        image: tobi,
-        title: 'Tobi Olatunji', 
-        subtitle: 'enlitic.com',
+        image: image,
+        name: 'Ayanna Howard', 
         link: 'https://www.linkedin.com/in/tobi-olatunji-md',
         icon: <FontAwesomeIcon icon={["fab", "linkedin"]} size="1x"/>,
     },
     {
-        image: salomey,
-        title: 'Salomey Osei', 
-        subtitle: 'African Masters of Machine Intelligence (AMMI)',
+        image: image,
+        name: 'Haben Girma', 
         link: 'https://www.linkedin.com/in/salomey-osei-4b08a5b8/',
         icon: <FontAwesomeIcon icon={["fab", "linkedin"]} size="1.5x"/>,
     },
+];
+
+const blackinAIBoard = [
     {
-        image: nwamaka,
-        title: 'Nwamaka Okafor', 
-        subtitle: 'University College Dublin',
-        link: 'https://www.linkedin.com/in/amaka-okafor/',
-        icon: <FontAwesomeIcon icon={["fab", "linkedin"]} size="1.5x"/>,
+        image: image,
+        name: 'Timnit Gebru',
+        link: 'https://webdocs.cs.ualberta.ca/~vsilva/',
+        icon: <FontAwesomeIcon icon={["fa", "link"]} size="1.5x"/>,
     },
     {
-        image: mirian,
-        title: 'Mírian Silva', 
-        subtitle: 'IBM',
-        link: 'https://twitter.com/mirianfrsilva',
+        image: image,
+        name: 'Rediet Abebe', 
+        link: 'https://www.lancaster.ac.uk/scc/about-us/people/ignatius-ezeani',
+        icon: <FontAwesomeIcon icon={["fa", "link"]} size="1.5x"/>,
+    },
+    {
+        image: image,
+        name: 'Sanmi Koyejo', 
+        link: 'https://twitter.com/yuehgoh',
         icon: <FontAwesomeIcon icon={["fab", "twitter"]} size="1.5x"/>,
     },
     {
-        image: krystal,
-        title: 'Krystal Maughan', 
-        subtitle: 'University of Vermont',
-        link: 'https://www.linkedin.com/in/krystal-maughan-3563a215/',
+        image: image,
+        name: 'Ezinne Nwanko', 
+        link: 'https://twitter.com/ftasse',
+        icon: <FontAwesomeIcon icon={["fab", "twitter"]} size="1.5x"/>,
+    },
+    {
+        image: image,
+        name: 'Devin Guillory', 
+        link: 'https://www.linkedin.com/in/tobi-olatunji-md',
+        icon: <FontAwesomeIcon icon={["fab", "linkedin"]} size="1x"/>,
+    },
+    {
+        image: image,
+        name: 'Joyce Williams', 
+        link: 'https://www.linkedin.com/in/salomey-osei-4b08a5b8/',
         icon: <FontAwesomeIcon icon={["fab", "linkedin"]} size="1.5x"/>,
+    },
+];
+
+const communityTeam = [
+    {
+        image: image,
+        name: 'Hassan Kane',
+        link: 'https://webdocs.cs.ualberta.ca/~vsilva/',
+        icon: <FontAwesomeIcon icon={["fa", "link"]} size="1.5x"/>,
+    },
+    {
+        image: krystal,
+        name: 'Krystal Maughan', 
+        link: 'https://www.lancaster.ac.uk/scc/about-us/people/ignatius-ezeani',
+        icon: <FontAwesomeIcon icon={["fa", "link"]} size="1.5x"/>,
+    },
+    {
+        image: image,
+        name: 'Isaac Donis', 
+        link: 'https://twitter.com/yuehgoh',
+        icon: <FontAwesomeIcon icon={["fab", "twitter"]} size="1.5x"/>,
     },
 ];
 
@@ -134,20 +168,55 @@ function TeamMembers(props) {
     return (
         <section className={classes.root}>
             <Container className={classes.container}>
-                <Grid container spacing={4}>
+                <Grid container spacing={2}>
                     <Grid item xs={12}>
-                        <Typography variant="h4" marked="center" align="center" className={classes.title}>
-                            Black in AI 2020 Workshop Organizers
+                        <Typography variant="h3" marked="center" align="center" className={classes.title}>
+                            Our Team
+                        </Typography>
+                    </Grid>
+
+                    <Grid item xs={12}>
+                        <Typography variant="h5" marked="center" align="center" className={classes.title}>
+                            Advisory Board
                         </Typography>
                     </Grid> 
-                    {teamlist.map((tile) => (
-                        <Grid item xs={12} md={3}>
-                            <Avatar alt={tile.title} src={tile.image} className={classes.avatarSize} />
+                    {advisoryBoard.map((tile) => (
+                        <Grid item xs={12} md={2}>
+                            <Avatar alt={tile.name} src={tile.image} className={classes.avatarSize} />
                             <Typography className={classes.cardtitle} variant="h6" gutterBottom>
-                                {tile.title} <Link className={classes.icon} href={tile.link}>{tile.icon}</Link>
+                                {tile.name} <Link className={classes.icon} href={tile.link}>{tile.icon}</Link>
                             </Typography>
-                            <Typography variant="body2" component="h2">
-                                {tile.subtitle} 
+                        </Grid>
+                    ))}
+
+                    <Divider variant="middle" className={classes.divider}/>
+
+                    <Grid item xs={12}>
+                        <Typography variant="h5" marked="center" align="center" className={classes.title}>
+                            Black in AI Board
+                        </Typography>
+                    </Grid> 
+                    {blackinAIBoard.map((tile) => (
+                        <Grid item xs={12} md={2}>
+                            <Avatar alt={tile.name} src={tile.image} className={classes.avatarSize} />
+                            <Typography className={classes.cardtitle} variant="h6" gutterBottom>
+                                {tile.name} <Link className={classes.icon} href={tile.link}>{tile.icon}</Link>
+                            </Typography>
+                        </Grid>
+                    ))}
+
+                    <Divider variant="middle" className={classes.divider}/>
+                    
+                    <Grid item xs={12}>
+                        <Typography variant="h5" marked="center" align="center" className={classes.title}>
+                            Community Team
+                        </Typography>
+                    </Grid> 
+                    {communityTeam.map((tile) => (
+                        <Grid item xs={12} md={2}>
+                            <Avatar alt={tile.name} src={tile.image} className={classes.avatarSize} />
+                            <Typography className={classes.cardtitle} variant="h6" gutterBottom>
+                                {tile.name} <Link className={classes.icon} href={tile.link}>{tile.icon}</Link>
                             </Typography>
                         </Grid>
                     ))}
