@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import { Container, Button, Divider, ListItem } from '@material-ui/core/';
-import Typography from './../Typography';
+import Typography from '../Typography';
 
 const styles = (theme) => ({
     root: {
@@ -84,7 +84,7 @@ const valueslist = [
     },
 ];
 
-function PartnershipDirectory(props) {
+function PartnershipBody(props) {
     const { classes } = props;
 
     return (
@@ -133,8 +133,8 @@ function PartnershipDirectory(props) {
     );
 }
 
-PartnershipDirectory.propTypes = {
+PartnershipBody.propTypes = {
     classes: PropTypes.object.isRequired,
 };
 
-export default withStyles(styles)(PartnershipDirectory);
+export default withStyles(styles)(PartnershipBody);

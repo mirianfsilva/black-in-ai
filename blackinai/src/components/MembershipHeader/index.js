@@ -50,16 +50,16 @@ function MembershipHeader(props) {
             <Grid container spacing={3}>
                 <Grid item xs={12} className={classes.container}>
                     <Grid item xs={12} md={6}>
-                        <Typography align="left" variant="h4" marked="center" className={classes.title}>
+                        <Typography align="left" variant="h3" marked="center" className={classes.title}>
                             Life changing connections
-                            </Typography>
+                        </Typography>
                         <Typography align="left" variant="h5">
                             The group was formed to create a space where Black people
                             in AI can share ideas, collaborate with one another, & discuss
                             initiatives for increasing our presence & inclusion in this
                             increasingly influential field. It’s been a very special community
                             that has been transformative for many of our members.
-                            </Typography>
+                        </Typography>
                     </Grid>
                     <Grid item xs={12} md={6}>
                         <CardMedia component="img" height="400" width="350" image={image}

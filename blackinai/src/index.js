@@ -11,6 +11,7 @@ import * as serviceWorker from './serviceWorker';
 import Membership from './pages/Membership';
 import Partnership from './pages/Partnership';
 import AcademicPrograms from './pages/AcademicPrograms';
+import Programs from './pages/Programs';
 
 library.add(fab, fas);
 
@@ -22,6 +23,7 @@ ReactDOM.render(
             <Route path="/membership" component={Membership} exact/>
             <Route path="/partnership" component={Partnership} exact/>
             <Route path="/academic-programs" component={AcademicPrograms} exact/> 
+            <Route path="/programs" component={Programs} exact/>
         </Switch>
     </BrowserRouter>,
   document.getElementById('root')

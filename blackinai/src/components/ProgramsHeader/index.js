@@ -1,11 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
-import Button from '../Button';
 import Typography from '../Typography';
-import { Card, CardMedia, Container, Divider, Grid, GridList, GridListTile } from '@material-ui/core';
-
-import image from './../../assets/img/header/bai-img-9.png';
+import { CardMedia, Container, Divider, Grid, GridList, GridListTile } from '@material-ui/core';
+import image from './../../assets/img/header/bai-img-5.jpg';
 
 const styles = (theme) => ({
     root: {
@@ -42,7 +40,7 @@ const styles = (theme) => ({
     },
 });
 
-function PartnershipHeader(props) {
+function ProgramsHeader(props) {
     const { classes } = props;
 
     return (
@@ -51,10 +49,10 @@ function PartnershipHeader(props) {
                 <Grid item xs={12} className={classes.container}>
                     <Grid item xs={12} md={6}>
                         <Typography align="left" variant="h3" marked="center" className={classes.title}>
-                            Become a sponsor of Black in AI
+                            An inclusive ecosystem
                         </Typography>
                         <Typography align="left" variant="h5">
-                            TAs a sponsor, you will have the utmost impact on various areas of our organization.
+                            Our initiatives include an academic program, events at various conferences related to AI, advocacy, and community building (through our online forums).
                         </Typography>
                     </Grid>
                     <Grid item xs={12} md={6}>
@@ -68,8 +66,8 @@ function PartnershipHeader(props) {
     );
 }
 
-PartnershipHeader.propTypes = {
+ProgramsHeader.propTypes = {
     classes: PropTypes.object.isRequired,
 };
 
-export default withStyles(styles)(PartnershipHeader);
+export default withStyles(styles)(ProgramsHeader);

@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import { Container, Button, Divider } from '@material-ui/core/';
-import Typography from './../Typography';
+import Typography from '../Typography';
 
 const styles = (theme) => ({
     root: {
@@ -84,7 +84,7 @@ const valueslist = [
     },
 ];
 
-function MembershipDirectory(props) {
+function MembershipBody(props) {
     const { classes } = props;
 
     return (
@@ -152,8 +152,8 @@ function MembershipDirectory(props) {
     );
 }
 
-MembershipDirectory.propTypes = {
+MembershipBody.propTypes = {
     classes: PropTypes.object.isRequired,
 };
 
-export default withStyles(styles)(MembershipDirectory);
+export default withStyles(styles)(MembershipBody);

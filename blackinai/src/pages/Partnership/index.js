@@ -3,7 +3,7 @@ import Footer from '../../components/Footer';
 import Navbar from '../../components/Navbar';
 import { ThemeProvider, Container, Box } from '@material-ui/core';
 import theme from './../../theme';
-import PartnershipDirectory from '../../components/PartnershipDirectory';
+import PartnershipBody from '../../components/PartnershipBody';
 import PartnershipHeader from '../../components/PartnershipHeader';
 import Sponsors from '../../components/Sponsors';
 
@@ -12,7 +12,7 @@ function Partnership() {
         <ThemeProvider theme={theme}>
             <Navbar />
             <PartnershipHeader/>
-            <PartnershipDirectory/>
+            <PartnershipBody/>
             <Sponsors/>
             <Footer />
         </ThemeProvider>
