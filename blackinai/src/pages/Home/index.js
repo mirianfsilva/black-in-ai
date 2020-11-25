@@ -8,6 +8,7 @@ import CommunityValues from '../../components/CommunityValues';
 import TeamMembers from '../../components/TeamMembers';
 import JoinUs from '../../components/JoinUs';
 import HomeQuote from '../../components/HomeQuote';
+import HomeBody from '../../components/HomeBody';
 
 function Home() {
     return (
@@ -16,6 +17,7 @@ function Home() {
             <Navbar/>
             <HomeHeader/>
             <HomeQuote/>
+            <HomeBody/>
             <JoinUs/>
             <Footer/>
         </ThemeProvider>
