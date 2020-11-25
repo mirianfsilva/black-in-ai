@@ -69,7 +69,7 @@ function BecamePartner(props) {
                         Became a Partner
                     </Typography>
                     <ColorButton className={classes.chip} variant="contained" href="/academicprograms">
-                        PARTNER WITH US
+                        Partner with Us
                     </ColorButton>
                 </Grid>
             </Container>
