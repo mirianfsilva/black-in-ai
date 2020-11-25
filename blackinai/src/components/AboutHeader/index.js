@@ -62,16 +62,16 @@ function AboutHeader(props) {
                         </Grid>
                     </Grid>
                     <Grid item xs={12} md={6}>
-                        <CardMedia component="img" alt="" height="430" image={image2}
+                        <CardMedia component="img" height="430" image={image2}
                             alt="Black people, smiling, with their hands up, wearing T-shirts with a raised fist, the black in AI logo.">
                         </CardMedia>
                     </Grid>
                     <Grid item xs={12} md={6}>
-                        <CardMedia component="img" alt="" height="205" image={image4}
+                        <CardMedia component="img" height="205" image={image4}
                             alt="A large auditorium, with several chairs being occupied by black people looking at the stage">
                         </CardMedia>
                         <br></br>
-                        <CardMedia component="img" alt="" height="205" image={image5}
+                        <CardMedia component="img" height="205" image={image5}
                             alt="The Black in AI organizers, 3 men and 3 women. Everyone standing, smiling and arm in arm.">
                         </CardMedia>
                     </Grid>
