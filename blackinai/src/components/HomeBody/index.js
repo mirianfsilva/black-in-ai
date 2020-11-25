@@ -15,8 +15,8 @@ const styles = (theme) => ({
         flexGrow: 1,
     },
     container: {
-        marginTop: theme.spacing(1),
-        marginBottom: theme.spacing(1),
+        marginTop: theme.spacing(2),
+        marginBottom: theme.spacing(2),
         display: 'flex',
         position: 'relative',
         padding: theme.spacing(0),
