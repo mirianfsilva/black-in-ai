@@ -59,7 +59,27 @@ function Copyright() {
             <Link color="inherit" href="/">
                 Black in AI
             </Link>{' '}{new Date().getFullYear()}{' '}
+            <Typography style={{ color:'#f8f7f7'}} variant="body2" marked="left" gutterBottom>
+                Website develop by <Link color="inherit" href="https://github.com/mirianfsilva">@mirianfsilva</Link>
+            </Typography>
         </React.Fragment>
+    );
+}
+
+function Donate(){
+    return (
+        <form id='my-donate-form' action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+            <input type="hidden" name="cmd" value="_donations"/>
+            <input type="hidden" name="business" value="organizers@blackinai.org"/>
+            <input type="hidden" name="lc" value="US"/>
+            <input type="hidden" name="item_name" value="Black in AI Fundraiser"/>
+            <input type="hidden" name="item_number" value="Thanks for your kind contribution. Funds are used to support the annual BAI Workshops."/>
+            <input type="hidden" name="no_note" value="0"/>
+            <input type="hidden" name="currency_code" value="USD"/>
+            <input type="hidden" name="bn" value="PP-DonationsBF:btn_donate_SM.gif:NonHostedGuest"/>
+            <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!"/>
+            <img alt="paypal button for donations" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1"/>
+        </form>
     );
 }
 
@@ -67,9 +87,10 @@ function Footer(props) {
     const classes = useStyles();
 
     const socialList = [
-        { id: 1, name: "Facebook", link: 'https://www.facebook.com/', image: <FontAwesomeIcon icon={["fab", "facebook"]} /> },
-        { id: 2, name: "Twitter", link: 'https://twitter.com/', image: <FontAwesomeIcon icon={["fab", "twitter"]} /> },
-        { id: 3, name: "Instagram", link: 'https://www.instagram.com/', image: <FontAwesomeIcon icon={["fab", "instagram"]} /> },
+        { id: 1, name: "Facebook", link: 'https://www.facebook.com/blackinai', image: <FontAwesomeIcon icon={["fab", "facebook"]} /> },
+        { id: 2, name: "Twitter", link: 'https://twitter.com/black_in_ai', image: <FontAwesomeIcon icon={["fab", "twitter"]} /> },
+        { id: 3, name: "Instagram", link: 'https://www.instagram.com/blackinai/', image: <FontAwesomeIcon icon={["fab", "instagram"]} /> },
+        { id: 4, name: "LinkedIn", link: 'https://www.linkedin.com/company/blackinai/', image: <FontAwesomeIcon icon={["fab", "linkedin"]} /> },
     ];
 
     return (
@@ -84,17 +105,13 @@ function Footer(props) {
                                         BLACK IN AI
                                     </Typography>
                                     <Typography style={{ color:'#f8f7f7'}} variant="body1" marked="left">
-                                            Short sentence stating the nature of the
-                                            organization e.g. tax-exempt, non-profit and
-                                            possibly registration number.
+                                            Non-profit Organization for Black 
+                                            Professionals in Artificial Intelligence.
                                     </Typography>
                                     <br></br>
                                     <Copyright />
                                     <br></br>
-                                    <br></br>
-                                    <ColorButton justify="left" className={classes.chip} size="small" variant="contained" href="/">
-                                        {'Donate'}
-                                    </ColorButton>
+                                    <Donate/>
                                 </Grid>
                             </Grid>
                         </Grid>

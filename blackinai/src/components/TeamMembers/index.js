@@ -56,25 +56,25 @@ const advisoryBoard = [
         image: require('./../../assets/img/team/CharlesIsbell.jpg'),
         name: 'Charles Isbell',
         link: 'https://www.linkedin.com/in/charles-isbell-a12b808/',
-        icon: <FontAwesomeIcon icon={["fab", "linkedin"]} size="1.5x"/>,
+        icon: <FontAwesomeIcon icon={["fab", "linkedin"]} size="1x"/>,
     },
     {
         image: require('./../../assets/img/team/BrandeisMarshall.jpg'),
         name: 'Brandeis Marshall', 
         link: 'https://www.brandeismarshall.com/',
-        icon: <FontAwesomeIcon icon={["fa", "link"]} size="1.5x"/>,
+        icon: <FontAwesomeIcon icon={["fa", "link"]} size="1x"/>,
     },
     {
         image: require('./../../assets/img/team/MakindeAdeagbo.jpeg'),
         name: 'Makinde Adeagbo', 
         link: 'https://www.linkedin.com/in/makinde/',
-        icon: <FontAwesomeIcon icon={["fab", "linkedin"]} size="1.5x"/>,
+        icon: <FontAwesomeIcon icon={["fab", "linkedin"]} size="1x"/>,
     },
     {
         image: require('./../../assets/img/team/RodneySampson.jpeg'),
         name: 'Rodney Sampson', 
         link: 'https://www.linkedin.com/in/rodneysampson/',
-        icon: <FontAwesomeIcon icon={["fab", "linkedin"]} size="1.5x"/>,
+        icon: <FontAwesomeIcon icon={["fab", "linkedin"]} size="1x"/>,
     },
     {
         image: require('./../../assets/img/team/AyannaHoward.jpg'),
@@ -86,7 +86,7 @@ const advisoryBoard = [
         image: require('./../../assets/img/team/HabenGirma.jpg'),
         name: 'Haben Girma', 
         link: 'https://www.linkedin.com/in/habengirma/',
-        icon: <FontAwesomeIcon icon={["fab", "linkedin"]} size="1.5x"/>,
+        icon: <FontAwesomeIcon icon={["fab", "linkedin"]} size="1x"/>,
     },
 ];
 
@@ -95,25 +95,25 @@ const blackinAIBoard = [
         image: require('./../../assets/img/team/TimnitGebru.jpg'),
         name: 'Timnit Gebru',
         link: 'https://ai.stanford.edu/~tgebru/',
-        icon: <FontAwesomeIcon icon={["fa", "link"]} size="1.5x"/>,
+        icon: <FontAwesomeIcon icon={["fa", "link"]} size="1x"/>,
     },
     {
         image: require('./../../assets/img/team/RedietAbebe.jpg'),
         name: 'Rediet Abebe', 
         link: 'https://www.cs.cornell.edu/~red/',
-        icon: <FontAwesomeIcon icon={["fa", "link"]} size="1.5x"/>,
+        icon: <FontAwesomeIcon icon={["fa", "link"]} size="1x"/>,
     },
     {
         image: require('./../../assets/img/team/SanmiKoyejo.png'),
         name: 'Sanmi Koyejo', 
         link: 'https://sanmi.cs.illinois.edu/',
-        icon: <FontAwesomeIcon icon={["fa", "link"]} size="1.5x"/>,
+        icon: <FontAwesomeIcon icon={["fa", "link"]} size="1x"/>,
     },
     {
         image: require('./../../assets/img/team/EzinneNwanko.jpg'),
         name: 'Ezinne Nwanko', 
         link: 'https://www.linkedin.com/in/ezinne-nwankwo-119586101/',
-        icon: <FontAwesomeIcon icon={["fab", "linkedin"]} size="1.5x"/>,
+        icon: <FontAwesomeIcon icon={["fab", "linkedin"]} size="1x"/>,
     },
     {
         image: require('./../../assets/img/team/DevinGuillory.jpg'),
@@ -125,7 +125,7 @@ const blackinAIBoard = [
         image: require('./../../assets/img/team/JoyceWilliams.jpg'),
         name: 'Joyce Williams', 
         link: '/',
-        // icon: <FontAwesomeIcon icon={["fab", "linkedin"]} size="1.5x"/>,
+        // icon: <FontAwesomeIcon icon={["fab", "linkedin"]} size="1x"/>,
     },
 ];
 
@@ -134,19 +134,19 @@ const communityTeam = [
         image: require('./../../assets/img/team/HassanKane.jpg'),
         name: 'Hassan Kane',
         link: 'https://www.linkedin.com/in/mohamed-hassan-kane-4b50328a/',
-        icon: <FontAwesomeIcon icon={["fab", "linkedin"]} size="1.5x"/>,
+        icon: <FontAwesomeIcon icon={["fab", "linkedin"]} size="1x"/>,
     },
     {
         image: require('./../../assets/img/team/KrystalMaughan.jpg'),
         name: 'Krystal Maughan', 
         link: 'https://www.linkedin.com/in/krystal-maughan-3563a215/',
-        icon: <FontAwesomeIcon icon={["fab", "linkedin"]} size="1.5x"/>,
+        icon: <FontAwesomeIcon icon={["fab", "linkedin"]} size="1x"/>,
     },
     {
         image: require('./../../assets/img/team/IsaacDonis.jpg'),
         name: 'Isaac Donis', 
         link: 'https://www.linkedin.com/in/isaacdonis/',
-        icon: <FontAwesomeIcon icon={["fab", "linkedin"]} size="1.5x"/>,
+        icon: <FontAwesomeIcon icon={["fab", "linkedin"]} size="1x"/>,
     },
 ];
 

@@ -37,9 +37,6 @@ const styles = (theme) => ({
         marginTop: theme.spacing(2),
         marginBottom: theme.spacing(2),
     },
-    divider: {
-        size: "5px",
-    },
     title: {
         marginTop: theme.spacing(5),
         marginBottom: theme.spacing(5),
