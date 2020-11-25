@@ -1,0 +1,12 @@
+{
+    "plugins": [
+      ["module-resolver", {
+        "cwd": "babelrc",
+        "root": ["./src"],
+        "alias": {
+          "test": "./test",
+          "underscore": "lodash"
+        }
+      }]
+    ]
+}

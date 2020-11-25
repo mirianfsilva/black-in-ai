@@ -5,19 +5,7 @@ import Grid from '@material-ui/core/Grid';
 import { Container, Divider, Card, CardContent, Button, Avatar, Link} from '@material-ui/core/';
 import Typography from '../Typography';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-
-// images 
-import image from './../../assets/img/profile.png';
-import charles from './../../assets/img/team/charles.jpeg';
-import flora from './../../assets/img/team/flora.jpeg';
-import foutse from './../../assets/img/team/foutse.jpg';
-import ignatius from './../../assets/img/team/ignatius.jpg';
-import nwamaka from './../../assets/img/team/nwamaka.jpg';
-import salomey from './../../assets/img/team/salomey.jpg';
-import tobi from './../../assets/img/team/tobi.jpg';
-import victor from './../../assets/img/team/victor.jpg';
-import mirian from './../../assets/img/team/mirian.png';
-import krystal from './../../assets/img/team/krystal.png';
+// images
 
 const styles = (theme) => ({
     root: {
@@ -65,100 +53,100 @@ const styles = (theme) => ({
 
 const advisoryBoard = [
     {
-        image: image,
+        image: require('./../../assets/img/team/CharlesIsbell.jpg'),
         name: 'Charles Isbell',
-        link: 'https://webdocs.cs.ualberta.ca/~vsilva/',
-        icon: <FontAwesomeIcon icon={["fa", "link"]} size="1.5x"/>,
+        link: 'https://www.linkedin.com/in/charles-isbell-a12b808/',
+        icon: <FontAwesomeIcon icon={["fab", "linkedin"]} size="1.5x"/>,
     },
     {
-        image: image,
+        image: require('./../../assets/img/team/BrandeisMarshall.jpg'),
         name: 'Brandeis Marshall', 
-        link: 'https://www.lancaster.ac.uk/scc/about-us/people/ignatius-ezeani',
+        link: 'https://www.brandeismarshall.com/',
         icon: <FontAwesomeIcon icon={["fa", "link"]} size="1.5x"/>,
     },
     {
-        image: image,
+        image: require('./../../assets/img/team/MakindeAdeagbo.jpeg'),
         name: 'Makinde Adeagbo', 
-        link: 'https://twitter.com/yuehgoh',
-        icon: <FontAwesomeIcon icon={["fab", "twitter"]} size="1.5x"/>,
+        link: 'https://www.linkedin.com/in/makinde/',
+        icon: <FontAwesomeIcon icon={["fab", "linkedin"]} size="1.5x"/>,
     },
     {
-        image: image,
+        image: require('./../../assets/img/team/RodneySampson.jpeg'),
         name: 'Rodney Sampson', 
-        link: 'https://twitter.com/ftasse',
-        icon: <FontAwesomeIcon icon={["fab", "twitter"]} size="1.5x"/>,
+        link: 'https://www.linkedin.com/in/rodneysampson/',
+        icon: <FontAwesomeIcon icon={["fab", "linkedin"]} size="1.5x"/>,
     },
     {
-        image: image,
+        image: require('./../../assets/img/team/AyannaHoward.jpg'),
         name: 'Ayanna Howard', 
-        link: 'https://www.linkedin.com/in/tobi-olatunji-md',
+        link: 'https://www.linkedin.com/in/ayanna-howard/',
         icon: <FontAwesomeIcon icon={["fab", "linkedin"]} size="1x"/>,
     },
     {
-        image: image,
+        image: require('./../../assets/img/team/HabenGirma.jpg'),
         name: 'Haben Girma', 
-        link: 'https://www.linkedin.com/in/salomey-osei-4b08a5b8/',
+        link: 'https://www.linkedin.com/in/habengirma/',
         icon: <FontAwesomeIcon icon={["fab", "linkedin"]} size="1.5x"/>,
     },
 ];
 
 const blackinAIBoard = [
     {
-        image: image,
+        image: require('./../../assets/img/team/TimnitGebru.jpg'),
         name: 'Timnit Gebru',
-        link: 'https://webdocs.cs.ualberta.ca/~vsilva/',
+        link: 'https://ai.stanford.edu/~tgebru/',
         icon: <FontAwesomeIcon icon={["fa", "link"]} size="1.5x"/>,
     },
     {
-        image: image,
+        image: require('./../../assets/img/team/RedietAbebe.jpg'),
         name: 'Rediet Abebe', 
-        link: 'https://www.lancaster.ac.uk/scc/about-us/people/ignatius-ezeani',
+        link: 'https://www.cs.cornell.edu/~red/',
         icon: <FontAwesomeIcon icon={["fa", "link"]} size="1.5x"/>,
     },
     {
-        image: image,
+        image: require('./../../assets/img/team/SanmiKoyejo.png'),
         name: 'Sanmi Koyejo', 
-        link: 'https://twitter.com/yuehgoh',
-        icon: <FontAwesomeIcon icon={["fab", "twitter"]} size="1.5x"/>,
+        link: 'https://sanmi.cs.illinois.edu/',
+        icon: <FontAwesomeIcon icon={["fa", "link"]} size="1.5x"/>,
     },
     {
-        image: image,
+        image: require('./../../assets/img/team/EzinneNwanko.jpg'),
         name: 'Ezinne Nwanko', 
-        link: 'https://twitter.com/ftasse',
-        icon: <FontAwesomeIcon icon={["fab", "twitter"]} size="1.5x"/>,
-    },
-    {
-        image: image,
-        name: 'Devin Guillory', 
-        link: 'https://www.linkedin.com/in/tobi-olatunji-md',
-        icon: <FontAwesomeIcon icon={["fab", "linkedin"]} size="1x"/>,
-    },
-    {
-        image: image,
-        name: 'Joyce Williams', 
-        link: 'https://www.linkedin.com/in/salomey-osei-4b08a5b8/',
+        link: 'https://www.linkedin.com/in/ezinne-nwankwo-119586101/',
         icon: <FontAwesomeIcon icon={["fab", "linkedin"]} size="1.5x"/>,
+    },
+    {
+        image: require('./../../assets/img/team/DevinGuillory.jpg'),
+        name: 'Devin Guillory', 
+        link: 'http://www.devinguillory.com/',
+        icon: <FontAwesomeIcon icon={["fa", "link"]} size="1x"/>,
+    },
+    {
+        image: require('./../../assets/img/team/JoyceWilliams.jpg'),
+        name: 'Joyce Williams', 
+        link: '/',
+        // icon: <FontAwesomeIcon icon={["fab", "linkedin"]} size="1.5x"/>,
     },
 ];
 
 const communityTeam = [
     {
-        image: image,
+        image: require('./../../assets/img/team/HassanKane.jpg'),
         name: 'Hassan Kane',
-        link: 'https://webdocs.cs.ualberta.ca/~vsilva/',
-        icon: <FontAwesomeIcon icon={["fa", "link"]} size="1.5x"/>,
+        link: 'https://www.linkedin.com/in/mohamed-hassan-kane-4b50328a/',
+        icon: <FontAwesomeIcon icon={["fab", "linkedin"]} size="1.5x"/>,
     },
     {
-        image: krystal,
+        image: require('./../../assets/img/team/KrystalMaughan.jpg'),
         name: 'Krystal Maughan', 
-        link: 'https://www.lancaster.ac.uk/scc/about-us/people/ignatius-ezeani',
-        icon: <FontAwesomeIcon icon={["fa", "link"]} size="1.5x"/>,
+        link: 'https://www.linkedin.com/in/krystal-maughan-3563a215/',
+        icon: <FontAwesomeIcon icon={["fab", "linkedin"]} size="1.5x"/>,
     },
     {
-        image: image,
+        image: require('./../../assets/img/team/IsaacDonis.jpg'),
         name: 'Isaac Donis', 
-        link: 'https://twitter.com/yuehgoh',
-        icon: <FontAwesomeIcon icon={["fab", "twitter"]} size="1.5x"/>,
+        link: 'https://www.linkedin.com/in/isaacdonis/',
+        icon: <FontAwesomeIcon icon={["fab", "linkedin"]} size="1.5x"/>,
     },
 ];
 
@@ -212,14 +200,16 @@ function TeamMembers(props) {
                             Community Team
                         </Typography>
                     </Grid> 
-                    {communityTeam.map((tile) => (
-                        <Grid item xs={12} md={2}>
+                    <Grid container justify="center">
+                        {communityTeam.map((tile) => (
+                        <Grid key={tile} item xs={12} md={2}>
                             <Avatar alt={tile.name} src={tile.image} className={classes.avatarSize} />
                             <Typography className={classes.cardtitle} variant="h6" gutterBottom>
                                 {tile.name} <Link className={classes.icon} href={tile.link}>{tile.icon}</Link>
                             </Typography>
                         </Grid>
-                    ))}
+                        ))}
+                    </Grid>
                 </Grid>
             </Container>
         </section>
