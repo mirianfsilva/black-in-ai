@@ -12,6 +12,7 @@ import Membership from './pages/Membership';
 import Partnership from './pages/Partnership';
 import AcademicPrograms from './pages/AcademicPrograms';
 import Programs from './pages/Programs';
+import Conferences from './pages/BaiWorkshops/AllConferences';
 
 library.add(fab, fas);
 
@@ -24,6 +25,11 @@ ReactDOM.render(
             <Route path="/partnership" component={Partnership} exact/>
             <Route path="/academic-programs" component={AcademicPrograms} exact/> 
             <Route path="/programs" component={Programs} exact/>
+            <Route path="/conferences" component={Conferences} exact/>
+            <Route path="/workshop/bai2017" component={Conferences} exact/>
+            <Route path="/workshop/bai2018" component={Conferences} exact/>
+            <Route path="/workshop/bai2019" component={Conferences} exact/>
+            <Route path="/workshop/bai2020" component={Conferences} exact/>
         </Switch>
     </BrowserRouter>,
   document.getElementById('root')
