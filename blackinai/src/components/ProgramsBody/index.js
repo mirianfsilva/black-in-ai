@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
-import { Container, Button, Divider, ListItem , Link} from '@material-ui/core/';
+import { Container, Button, Divider , Link} from '@material-ui/core/';
 import Typography from '../Typography';
 
 const styles = (theme) => ({
@@ -84,17 +84,6 @@ const JoinUsButton = withStyles((theme) => ({
         },
     },
 }))(Button);
-
-const valueslist = [
-    {
-        id: 1, title: '300',
-        text: 'We’ve grown from a small facebook group to a global movement comprising 3000 community members and allies who believe that more black people should shape the direction of the field of AI.'
-    },
-    {
-        id: 2, title: '42',
-        text: 'Total number of countries with Black in AI members.'
-    },
-];
 
 function ProgramsBody(props) {
     const { classes } = props;

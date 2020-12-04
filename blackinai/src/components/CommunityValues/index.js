@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
-import { Container, Divider, Chip, Button } from '@material-ui/core/';
+import { Container, Divider, Button } from '@material-ui/core/';
 import Typography from './../Typography';
 import backgroundImage from './../../assets/img/appCurvyLines.png';
 

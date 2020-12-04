@@ -60,17 +60,6 @@ const ColorButton = withStyles((theme) => ({
     },
 }))(Button);
 
-const JoinUsButton = withStyles((theme) => ({
-    root: {
-        color: theme.palette.getContrastText(theme.palette.primary.light),
-        backgroundColor: theme.palette.primary.light,
-        '&:hover': {
-            backgroundColor: theme.palette.primary.light,
-        },
-    },
-}))(Button);
-
-
 function HomeQuote(props) {
     const { classes } = props;
 

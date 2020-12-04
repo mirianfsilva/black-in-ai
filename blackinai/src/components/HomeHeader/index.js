@@ -2,13 +2,12 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import Typography from '../Typography';
-import HeaderLayout from '../HeaderLayout';
 import { Button, Card, CardMedia, Container, Divider, Grid, GridList, GridListTile } from '@material-ui/core';
 
 import image from './../../assets/img/header/bai-img-2.jpg';
-import image2 from './../../assets/img/header/bai-img-4.JPG';
-import image4 from './../../assets/img/header/bai-img-5.jpg';
-import image5 from './../../assets/img/header/bai-img-6.jpg';
+// import image2 from './../../assets/img/header/bai-img-4.JPG';
+// import image4 from './../../assets/img/header/bai-img-5.jpg';
+// import image5 from './../../assets/img/header/bai-img-6.jpg';
 
 
 const styles = (theme) => ({

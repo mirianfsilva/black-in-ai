@@ -2,8 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { makeStyles } from '@material-ui/core/styles';
 import { withStyles } from '@material-ui/core/styles';
-import { List, Link, ListItem, ListItemText, CssBaseline, ListItemAvatar, Grid } from '@material-ui/core';
-import { Container, Divider, Avatar, Card, Button} from '@material-ui/core';
+import { List, Link, ListItem, Grid } from '@material-ui/core';
+import { Container, Button} from '@material-ui/core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Typography from './../Typography';
 

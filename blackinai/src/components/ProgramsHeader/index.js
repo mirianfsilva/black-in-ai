@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import Typography from '../Typography';
-import { CardMedia, Container, Divider, Grid, GridList, GridListTile } from '@material-ui/core';
+import { CardMedia, Container, Grid, } from '@material-ui/core';
 import image from './../../assets/img/header/bai-img-5.jpg';
 
 const styles = (theme) => ({
