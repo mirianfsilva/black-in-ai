@@ -31,7 +31,6 @@ const styles = (theme) => ({
 
 function MembershipDirectory(props) {
     const { classes } = props;
-
     return (
         <section className={classes.root}>
             <Container className={classes.container}>
@@ -42,7 +41,9 @@ function MembershipDirectory(props) {
                         </Typography>
                     </Grid>
                     <Grid item xs={12}>
-                        <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTAQRnUaZIXa7YR0gC9P58Raf-eqf3ZYezyQDBd_r_C9E-e6fi3bN-EHasVH7nN0CLfiPUR_eF9Qu1M/pubhtml?widget=true&amp;headers=false"
+                        {/* eslint-disable-next-line */}
+                        <iframe 
+                            src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTAQRnUaZIXa7YR0gC9P58Raf-eqf3ZYezyQDBd_r_C9E-e6fi3bN-EHasVH7nN0CLfiPUR_eF9Qu1M/pubhtml?widget=true&amp;headers=false"
                             width="100%" height="500px">
                         </iframe>
                     </Grid>
