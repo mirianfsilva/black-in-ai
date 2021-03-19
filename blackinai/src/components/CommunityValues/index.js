@@ -1,10 +1,10 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { withStyles } from '@material-ui/core/styles';
+import { Button, Container, Divider } from '@material-ui/core/';
 import Grid from '@material-ui/core/Grid';
-import { Container, Divider, Chip, Button } from '@material-ui/core/';
-import Typography from './../Typography';
+import { withStyles } from '@material-ui/core/styles';
+import PropTypes from 'prop-types';
+import React from 'react';
 import backgroundImage from './../../assets/img/appCurvyLines.png';
+import Typography from './../Typography';
 
 const styles = (theme) => ({
     root: {
@@ -63,7 +63,7 @@ const ColorButton = withStyles((theme) => ({
 const valueslist = [
     {
         id: 1, title: '2017',
-        text: 'BAI was founded to challenge the status quo.'
+        text: 'Black in AI was founded to challenge the status quo.'
     },
     {
         id: 2, title: '3000',
@@ -87,13 +87,13 @@ function CommunityValues(props) {
             <Container className={classes.container}>
                 <Grid container spacing={12}>
                     <Grid container spacing={3}>
-                        <img src={backgroundImage} className={classes.curvyLines} />
+                        <img src={backgroundImage} alt="" className={classes.curvyLines} />
                         <Grid item xs={12} md={6}>
                             <Typography variant="h2" color="secondary" className={classes.title}>
                                 We're addressing the diversity crisis in AI
                             </Typography>
-                            <ColorButton className={classes.chip} variant="contained" href="/">
-                                Our Programns
+                            <ColorButton className={classes.chip} variant="contained" href="/programs">
+                                Our Programs
                             </ColorButton>
                         </Grid>
                         <Grid item xs={12} md={6}>

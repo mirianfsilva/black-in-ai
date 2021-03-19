@@ -1,7 +1,7 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import { ButtonBase, Container } from '@material-ui/core/';
 import { withStyles } from '@material-ui/core/styles';
-import { ButtonBase, Container, Link} from '@material-ui/core/';
+import PropTypes from 'prop-types';
+import React from 'react';
 import Typography from '../Typography';
 
 
@@ -109,7 +109,7 @@ function Workshops(props) {
             img: require('./../../assets/img/general/vancouver_neurips_2020.jpg'),
             title: 'Black in AI 2020',
             width: '100%',
-            url: '/workshop/bai2020',
+            url: 'https://blackinai2020.vercel.app/',
         },
     ];
 

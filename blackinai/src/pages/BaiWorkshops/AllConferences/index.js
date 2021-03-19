@@ -1,13 +1,15 @@
+import { CssBaseline, ThemeProvider } from '@material-ui/core';
 import React from 'react';
-import Navbar from '../../../components/Navbar';
 import Footer from '../../../components/Footer';
-import { ThemeProvider, CssBaseline } from '@material-ui/core';
-import theme from './../../../theme';
+import Navbar from '../../../components/Navbar';
 import Workshops from '../../../components/Workshops';
+import Loader from '../../../loader';
+import theme from './../../../theme';
 
 function Conferences() {
     return (
         <ThemeProvider theme={theme}>
+            <Loader />
             <CssBaseline />
             <Navbar/>
             <Workshops/>

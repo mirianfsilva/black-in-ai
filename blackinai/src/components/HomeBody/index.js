@@ -1,12 +1,12 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import { Button, Container, Grid } from '@material-ui/core';
 import { withStyles } from '@material-ui/core/styles';
+import PropTypes from 'prop-types';
+import React from 'react';
 import Typography from '../Typography';
-import { Card, Button, CardMedia, Container, Divider, Grid } from '@material-ui/core';
 
-const image1 = "https://images.unsplash.com/photo-1573164574397-dd250bc8a598?ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80";
-const image2 = "https://images.unsplash.com/photo-1531482615713-2afd69097998?ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80";
-const image3 = "https://images.unsplash.com/photo-1524087460115-e21f419c9e1e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80";
+const image1 = require('./../../assets/img/header/bai-img-13.jpg');
+const image2 = require('./../../assets/img/header/bai-img-11.jpg');
+const image3 = require('./../../assets/img/header/bai-img-14.jpg');
 
 const styles = (theme) => ({
     root: {
@@ -64,7 +64,7 @@ function HomeBody(props) {
                 <Grid item xs={12} className={classes.container}>
                     <Grid item xs={12}>
                         <Container className={classes.cardMedia} style={{ backgroundImage: `url(${image1})` }}>    
-                            {<img style={{ display: 'none' }} src={image1} />}
+                            {<img style={{ display: 'none' }} src={image1} alt="" />}
                         </Container>
                     </Grid>
                     <Grid item xs={12} className={classes.cardText}>
@@ -76,8 +76,8 @@ function HomeBody(props) {
                             various conferences related to AI, advocacy, and community building 
                             (through our online forums).
                         </Typography>
-                        <ColorButton className={classes.chip} variant="contained" href="/">
-                            See Our Programns
+                        <ColorButton className={classes.chip} variant="contained" href="/programs">
+                            See Our Programs
                         </ColorButton>
                     </Grid>
                 </Grid>
@@ -91,18 +91,18 @@ function HomeBody(props) {
                             researcher. We use the forum to aggregate scholarships, fellowships, internship 
                             and job opportunities, summer schools, or research related discussions.
                         </Typography>
-                        <ColorButton className={classes.chip} variant="contained" href="/">
+                        <ColorButton className={classes.chip} variant="contained" href="https://docs.google.com/forms/d/1pv34QhQE74gBnDu2xTdLmMNnWykY5tN2wihWIh7mwrQ/viewform?edit_requested=true">
                             Join Us
                         </ColorButton>
                     </Grid>
                     <Container className={classes.cardMedia} style={{ backgroundImage: `url(${image2})` }}>    
-                        {<img style={{ display: 'none' }} src={image2} />}
+                        {<img style={{ display: 'none' }} src={image2} alt="" />}
                     </Container>
                 </Grid>
                 <Grid item xs={12} className={classes.container}>
                     <Grid item xs={12}>
                         <Container className={classes.cardMedia} style={{ backgroundImage: `url(${image3})` }}>    
-                            {<img style={{ display: 'none' }} src={image3} />}
+                            {<img style={{ display: 'none' }} src={image3} alt="" />}
                         </Container>
                     </Grid>
                     <Grid item xs={12} className={classes.cardText}>
@@ -113,7 +113,7 @@ function HomeBody(props) {
                             Partners play a key role in accelerating our mission and impact through 
                             making our workshop feasible and sustaining our community
                         </Typography>
-                        <ColorButton className={classes.chip} variant="contained" href="/">
+                        <ColorButton className={classes.chip} variant="contained" href="/partnership">
                             Learn More
                         </ColorButton>
                     </Grid>

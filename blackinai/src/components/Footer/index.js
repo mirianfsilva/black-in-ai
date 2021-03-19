@@ -1,10 +1,8 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { makeStyles } from '@material-ui/core/styles';
-import { withStyles } from '@material-ui/core/styles';
-import { List, Link, ListItem, ListItemText, CssBaseline, ListItemAvatar, Grid } from '@material-ui/core';
-import { Container, Divider, Avatar, Card, Button} from '@material-ui/core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { Container, Grid, Link, List, ListItem } from '@material-ui/core';
+import { makeStyles } from '@material-ui/core/styles';
+import PropTypes from 'prop-types';
+import React from 'react';
 import Typography from './../Typography';
 
 
@@ -42,16 +40,6 @@ const useStyles = makeStyles((theme) => ({
     }
 }));
 
-const ColorButton = withStyles((theme) => ({
-    root: {
-        color: theme.palette.getContrastText(theme.palette.warning.main),
-        backgroundColor: theme.palette.warning.main,
-        '&:hover': {
-            backgroundColor: theme.palette.warning.main,
-        },
-    },
-}))(Button);
-
 function Copyright() {
     return (
         <React.Fragment>
@@ -68,12 +56,12 @@ function Copyright() {
 
 function Donate(){
     return (
-        <form id='my-donate-form' action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+        <form id='my-donate-form' action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank" rel="noopener">
             <input type="hidden" name="cmd" value="_donations"/>
             <input type="hidden" name="business" value="organizers@blackinai.org"/>
             <input type="hidden" name="lc" value="US"/>
             <input type="hidden" name="item_name" value="Black in AI Fundraiser"/>
-            <input type="hidden" name="item_number" value="Thanks for your kind contribution. Funds are used to support the annual BAI Workshops."/>
+            <input type="hidden" name="item_number" value="Thanks for your kind contribution. Funds are used to support Black in AI initiatives."/>
             <input type="hidden" name="no_note" value="0"/>
             <input type="hidden" name="currency_code" value="USD"/>
             <input type="hidden" name="bn" value="PP-DonationsBF:btn_donate_SM.gif:NonHostedGuest"/>
@@ -153,27 +141,13 @@ function Footer(props) {
                                 <Link variant="body1" style={{ color:'#f8f7f7'}} href="/about">About Us</Link>
                             </li>
                             <li className={classes.listItem}>
-                                <Link variant="body1" style={{ color:'#f8f7f7'}} href="/">Programs</Link>
+                                <Link variant="body1" style={{ color:'#f8f7f7'}} href="/programs">Programs</Link>
                             </li>
                             <li className={classes.listItem}>
                                 <Link variant="body1" style={{ color:'#f8f7f7'}} href="/membership">Membership</Link>
                             </li>
                             <li className={classes.listItem}>
                                 <Link variant="body1" style={{ color:'#f8f7f7'}} href="/partnership">Partnership</Link>
-                            </li>
-                        </ul>
-                    </Grid>
-                    <Grid item xs={6} sm={4} md={3}>
-                        <Typography style={{ color:'#f8f7f7'}} variant="h6" marked="left" gutterBottom>
-                            GET UPDATES
-                        </Typography>
-                        <ul className={classes.list} style={{ color:'#f8f7f7'}}>
-                            <li className={classes.listItem}>
-                                <Typography style={{ color:'#f8f7f7'}} variant="body1" marked="left" gutterBottom>
-                                    Sign up for our newsletter to get updates on our work.
-                                </Typography>
-                            </li>
-                            <li>
                             </li>
                         </ul>
                     </Grid>

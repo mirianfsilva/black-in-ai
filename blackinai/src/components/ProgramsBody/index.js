@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
-import { Container, Button, Divider, ListItem , Link} from '@material-ui/core/';
+import { Container, Button, Divider , Link} from '@material-ui/core/';
 import Typography from '../Typography';
 
 const styles = (theme) => ({
@@ -35,7 +35,7 @@ const styles = (theme) => ({
     },
     chip: {
         margin: theme.spacing(1),
-        size: 'large',
+        size: 'medium',
         borderRadius: "40px",
     },
     divider: {
@@ -45,14 +45,12 @@ const styles = (theme) => ({
         height: "1px",
     },
     list: {
-        marginTop: theme.spacing(3),
-        marginBottom: theme.spacing(3),
-        marginLeft: theme.spacing(4),
+        margin: theme.spacing(3),
         color: theme.palette.primary.light,
     },
     listButton: {
         margin: theme.spacing(-1),
-        size: 'medium',
+        size: 'small',
         borderRadius: "40px",
         marginLeft: theme.spacing(25),
     }
@@ -75,7 +73,7 @@ const ColorButton = withStyles((theme) => ({
     },
 }))(Button);
 
-const JoinUsButton = withStyles((theme) => ({
+const SecondButton = withStyles((theme) => ({
     root: {
         color: theme.palette.getContrastText(theme.palette.primary.light),
         backgroundColor: theme.palette.primary.light,
@@ -84,17 +82,6 @@ const JoinUsButton = withStyles((theme) => ({
         },
     },
 }))(Button);
-
-const valueslist = [
-    {
-        id: 1, title: '300',
-        text: 'We’ve grown from a small facebook group to a global movement comprising 3000 community members and allies who believe that more black people should shape the direction of the field of AI.'
-    },
-    {
-        id: 2, title: '42',
-        text: 'Total number of countries with Black in AI members.'
-    },
-];
 
 function ProgramsBody(props) {
     const { classes } = props;
@@ -112,31 +99,31 @@ function ProgramsBody(props) {
                         <Grid item xs={12} md={6}>
                             <Typography className={classes.title}>
                                 Our annual Black in AI (BAI) workshop co-located with NeurIPS, as well as our 
-                                satellite gatherings in other AI conferences (e.g. AAAI, CVPR, ICML, FAT*) allow 
+                                satellite gatherings in other AI conferences (e.g. AAAI, CVPR, ICML, FAccT) allow 
                                 members of the BAI community to attend NeurIPS without feeling isolated.
                             </Typography>
-                            <JoinUsButton className={classes.chip} variant="contained" href="/">
+                            <SecondButton className={classes.chip} variant="contained" href="/">
                                 Become a Sponsor
-                            </JoinUsButton>
+                            </SecondButton>
                         </Grid>
                         <Grid item xs={12} md={6}>
                             <Typography variant="body1" className={classes.list}>
                                 BAI 2020
-                                <ColorButton className={classes.listButton} variant="contained" href="/">Attend</ColorButton>
+                                <ColorButton className={classes.chip} variant="contained" href="https://blackinai2020.vercel.app/">VIEW BAI 2020</ColorButton>
                             </Typography>
                             <Divider variant="middle" className={classes.divider}/>
                             <Typography variant="body1" className={classes.list}>
                                 BAI 2019
-                                <JoinUsButton className={classes.listButton} variant="contained" href="/">VIEW HIGHLIGHTS</JoinUsButton>
+                                <SecondButton className={classes.chip} variant="contained" href="/workshop/bai2019">VIEW HIGHLIGHTS</SecondButton>
                             </Typography>
                             <Divider variant="middle" className={classes.divider}/>
                             <Typography variant="body1" className={classes.list}>
                                 BAI 2018
-                                <JoinUsButton className={classes.listButton} variant="contained" href="/">VIEW HIGHLIGHTS</JoinUsButton>
+                                <SecondButton className={classes.chip} variant="contained" href="/workshop/bai2018">VIEW HIGHLIGHTS</SecondButton>
                             </Typography>
                             <Divider variant="middle" className={classes.divider}/>
                             <Typography variant="body1" className={classes.list}>
-                                <Link href="/conferences">View more conferences</Link>
+                                <Link href="/#/conferences">View more conferences</Link>
                             </Typography>
                         </Grid>
                     </Grid>

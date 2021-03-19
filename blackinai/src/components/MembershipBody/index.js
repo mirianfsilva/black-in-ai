@@ -1,8 +1,8 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { withStyles } from '@material-ui/core/styles';
+import { Button, Container, Divider } from '@material-ui/core/';
 import Grid from '@material-ui/core/Grid';
-import { Container, Button, Divider } from '@material-ui/core/';
+import { withStyles } from '@material-ui/core/styles';
+import PropTypes from 'prop-types';
+import React from 'react';
 import Typography from '../Typography';
 
 const styles = (theme) => ({
@@ -63,19 +63,9 @@ const ColorButton = withStyles((theme) => ({
     },
 }))(Button);
 
-const JoinUsButton = withStyles((theme) => ({
-    root: {
-        color: theme.palette.getContrastText(theme.palette.primary.light),
-        backgroundColor: theme.palette.primary.light,
-        '&:hover': {
-            backgroundColor: theme.palette.primary.light,
-        },
-    },
-}))(Button);
-
 const valueslist = [
     {
-        id: 1, title: '300',
+        id: 1, title: '3000+',
         text: 'We’ve grown from a small facebook group to a global movement comprising 3000 community members and allies who believe that more black people should shape the direction of the field of AI.'
     },
     {
@@ -96,12 +86,9 @@ function MembershipBody(props) {
                             <Typography variant="h2" color="secondary" className={classes.title}>
                                 Be part of our network
                             </Typography>
-                            <ColorButton className={classes.chip} variant="contained" href="/">
+                            <ColorButton className={classes.chip} variant="contained" href="https://docs.google.com/forms/d/1pv34QhQE74gBnDu2xTdLmMNnWykY5tN2wihWIh7mwrQ/viewform?edit_requested=true">
                                 Become a Member
                             </ColorButton>
-                            <JoinUsButton className={classes.chip} variant="contained" href="/">
-                                Membership Directory
-                            </JoinUsButton>
                         </Grid>
                         <Grid item xs={12} md={6}>
                             <Typography variant="h4" className={classes.title}>

@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import Typography from '../Typography';
-import { CardMedia, Container, Divider, Grid, GridList, GridListTile } from '@material-ui/core';
+import { CardMedia, Container, Grid, } from '@material-ui/core';
 import image from './../../assets/img/header/bai-img-5.jpg';
 
 const styles = (theme) => ({
@@ -45,22 +45,21 @@ function ProgramsHeader(props) {
 
     return (
         <Container className={classes.container}>
-            <Grid container spacing={3}>
-                <Grid item xs={12} className={classes.container}>
-                    <Grid item xs={12} md={6}>
-                        <Typography align="left" variant="h3" marked="center" className={classes.title}>
-                            An inclusive ecosystem
+            <Grid container spacing={4}>
+                <Grid item xs={12} md={6}>
+                    <Typography align="left" variant="h3" marked="center" className={classes.title}>
+                        An inclusive ecosystem
                         </Typography>
-                        <Typography align="left" variant="h5">
-                            Our initiatives include an academic program, events at various conferences related to AI, advocacy, and community building (through our online forums).
+                    <Typography align="left" variant="h5">
+                        Our initiatives include an academic program, events at various conferences related to AI, advocacy, and community building (through our online forums).
                         </Typography>
-                    </Grid>
-                    <Grid item xs={12} md={6}>
-                        <CardMedia component="img" height="400" width="350" image={image}
-                            alt="Black people, smiling and holding the flag of Brazil">
-                        </CardMedia>
-                    </Grid>
                 </Grid>
+                <Grid item xs={12} md={6}>
+                    <CardMedia component="img" height="400" width="350" image={image}
+                        alt="Black people, smiling and holding the flag of Brazil">
+                    </CardMedia>
+                </Grid>
+
             </Grid>
         </Container>
     );

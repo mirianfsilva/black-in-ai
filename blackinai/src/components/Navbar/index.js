@@ -1,11 +1,9 @@
-import React, { useState } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import clsx from 'clsx';
-import { makeStyles } from '@material-ui/core/styles';
 import { withStyles } from '@material-ui/core/styles';
-import Typography from './../Typography';
-import { Link, Hidden, Drawer, IconButton, List , ListItem} from '@material-ui/core/';
-import { AppBar, Toolbar, SwipeableDrawer, Button, Menu, Grid } from '@material-ui/core';
+import { Link, Drawer, IconButton, List , ListItem} from '@material-ui/core/';
+import { AppBar, Toolbar, Button } from '@material-ui/core';
 import MenuIcon from '@material-ui/icons/Menu';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import logo from './../../assets/img/bai-logo.png';
@@ -98,12 +96,12 @@ const ColorButton = withStyles((theme) => ({
 
 function Donate() {
     return (
-        <form id='my-donate-form' action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+        <form id='my-donate-form' action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank" rel="noopener">
             <input type="hidden" name="cmd" value="_donations" />
             <input type="hidden" name="business" value="organizers@blackinai.org" />
             <input type="hidden" name="lc" value="US" />
             <input type="hidden" name="item_name" value="Black in AI Fundraiser" />
-            <input type="hidden" name="item_number" value="Thanks for your kind contribution. Funds are used to support the annual BAI Workshops." />
+            <input type="hidden" name="item_number" value="Thanks for your kind contribution. Funds are used to support Black in AI initiatives." />
             <input type="hidden" name="no_note" value="0" />
             <input type="hidden" name="currency_code" value="USD" />
             <input type="hidden" name="bn" value="PP-DonationsBF:btn_donate_SM.gif:NonHostedGuest" />
